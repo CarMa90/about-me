@@ -1,0 +1,112 @@
+:root{
+    --step--2: clamp(0.6944rem, 0.6561rem + 0.1919vi, 0.8rem);
+    --step--1: clamp(0.8333rem, 0.7727rem + 0.303vi, 1rem);
+    --step-0: clamp(1rem, 0.9091rem + 0.4545vi, 1.25rem);
+    --step-1: clamp(1.2rem, 1.0682rem + 0.6591vi, 1.5625rem);
+    --step-2: clamp(1.44rem, 1.2534rem + 0.933vi, 1.9531rem);
+    --step-3: clamp(1.728rem, 1.4686rem + 1.2971vi, 2.4414rem);
+    --step-4: clamp(2.0736rem, 1.7179rem + 1.7785vi, 3.0518rem);
+    --step-5: clamp(2.4883rem, 2.006rem + 2.4116vi, 3.8147rem);
+}
+
+html{
+    box-sizing: border-box;
+    font-family: "raleway", sans-serif;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body, 
+h1{
+    margin-top: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.content {
+    margin: 100px auto 50px;
+    width: 100%;
+    max-width: 790px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ********** Estilos para las tarjetas ********** */
+
+.card{
+    width: 350px;
+    margin: 0 auto 60px;
+    padding: 45px 45px;
+    background-color: #fff;
+    box-shadow: 4px 4px 5px rgba(0, 132, 255, .4);
+    transition: all 500ms ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 7px rgba(0, 132, 255, .2);
+}
+
+.card-content{
+    font-size: var(--step-0);
+}
+
+.card-image{
+    max-width: 100%;
+    margin: 0 auto 25px auto;
+}
+
+.card-title{
+    font-size: var(--step-2);
+    margin-bottom: 10px;
+}
+
+/* ********** Estilos para el footer ********** */
+
+.footer{
+    display: flex;
+    height: 300px;
+    background-color: #000;
+}
+
+.footer-author{
+    color: #fff;
+    font-size: var(--step-3);
+    margin: auto;
+}
+
+/* ********** Estilos para el header ********** */
+
+.header-title{
+    font-family: "Permanent Marker", sans-serif;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: var(--step-5);
+    color: white;
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    background-image: url(./assets/escritorio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.overlay{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
